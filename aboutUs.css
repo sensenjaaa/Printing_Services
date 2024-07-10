@@ -1,0 +1,170 @@
+body{
+    background-color: #eeedeb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+/* header */
+#headerContainer{
+    display: flex;
+    background-color: #3c3633;
+    margin: auto;
+    margin-top:50px;
+    width: 80%;
+}
+
+#innerheaderContainer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    gap: 650px;
+}
+
+#headerLogo{
+    margin-left: 100px;
+    position: relative;
+    height: 150px;
+    margin-top: -25px;
+}
+
+.img-logo{
+    width: 200px;
+}
+
+.img-shop{
+    width: 75px;
+}
+
+/* navigation */
+#navigationContainer{
+    background-color: #3c3633;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navigation{
+    display: flex;
+    overflow: hidden;
+}
+
+#navigation a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    width: fit-content;
+    text-align: center;
+    font-size: 20px;
+}
+
+#navigation a:visited{
+    background-color: #605c52;
+}
+
+#navigation a:hover{
+    background-color: #605c52;
+}
+
+#navigation a.active{
+    background-color: #605c52;
+}
+
+hr{
+    width: 80%;
+    margin-top: 10px;
+}
+
+#homeContainer{
+    background-color: #e0ccbe;
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    margin-bottom: 80px;
+    text-align: center;
+    margin-top: 60px;
+}
+
+#homeText{
+    color: #3c3633;
+    padding: 30px;
+    font-size: 25px;
+    text-align: justify;
+}
+
+#homeTitle{
+    margin: auto;
+    text-align: center;
+    background-color: #3c3633;
+    color: white;
+    padding: 10px;
+    margin-top: -40px;
+    box-shadow: 5px 10px #888888;
+    width: 40%;
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #innerheaderContainer{
+        gap: 350px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #innerheaderContainer{
+        gap: 350px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #innerheaderContainer{
+        gap: 340px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #innerheaderContainer{
+        gap: 370px;
+    }
+}
+
+@media only screen and (min-width: 1010px) {
+    #innerheaderContainer{
+        gap: 400px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    #innerheaderContainer{
+        gap: 500px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #innerheaderContainer{
+        gap: 550px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #innerheaderContainer{
+        gap: 650px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #innerheaderContainer{
+        gap: 700px;
+    }
+}

@@ -1,0 +1,370 @@
+body{
+    background-color: #eeedeb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul{
+    list-style: none;
+}
+
+/* header */
+#headerContainer{
+    display: flex;
+    background-color: #3c3633;
+    margin: auto;
+    margin-top:50px;
+    width: 80%;
+}
+
+#innerheaderContainer{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    gap: 650px;
+}
+
+#headerLogo{
+    margin-left: 100px;
+    position: relative;
+    height: 150px;
+    margin-top: -25px;
+}
+
+.img-logo{
+    width: 200px;
+}
+
+.img-shop{
+    width: 75px;
+}
+
+/* navigation */
+#navigationContainer{
+    background-color: #3c3633;
+    width: 80%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navigation{
+    display: flex;
+    overflow: hidden;
+}
+
+#navigation a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    width: fit-content;
+    text-align: center;
+    font-size: 20px;
+}
+
+#navigation a:visited{
+    background-color: #605c52;
+}
+
+#navigation a:hover{
+    background-color: #605c52;
+}
+
+#navigation a.active{
+    background-color: #605c52;
+}
+
+hr{
+    width: 80%;
+    margin-top: 10px;
+}
+
+/* home */
+#homeContainer{
+    background-image: url(home_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    display: flex;
+    margin-bottom: 80px;
+}
+
+#homeText{
+    width: 45%;
+    color: white;
+    background-color: rgb(224, 204, 190, 0.5);
+    padding: 30px;
+    font-size: 25px;
+}
+
+#homeText > a{
+    color: #3c3633;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#homeText > a:hover{
+    color: #d07649;
+    text-decoration: none;
+}
+
+#homeText{
+    animation: Hometext 1s ease-in;
+}
+
+@keyframes Hometext {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+/* shop */
+#shopContainer{
+    border: 5px solid #3c3633;
+    border-radius: 30px;
+    display: flex;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#shopTitle{
+    margin: auto;
+    text-align: center;
+    background-color: #3c3633;
+    color: white;
+    padding: 10px;
+    margin-top: -50px;
+    box-shadow: 5px 10px #888888;
+}
+
+#shopContent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#shopContent > ul{
+    background-color: #e0ccbe;
+    box-shadow: 10px 10px #685a4fa2;
+    border-radius: 20px;
+    height: 300px;
+    width: 200px;
+}
+
+#shopContent > ul > li > img{
+    margin-top: 20px;
+    border: 1px solid #3c3633;
+    width: 160px;
+}
+
+#shopContent > ul > li > h3{
+    color: #3c3633;
+}
+
+#shopContent > ul > li > p{
+    color: #3c3633;
+}
+
+#shopContent > ul > li > a{
+    color: #3c3633;
+}
+
+/* footer */
+#footerContainer{
+    background-color: #3c3633;
+    width: 80%;
+    margin: auto;
+    height: 100;
+}
+
+#footerContent{
+    color: white;
+    padding: 10px;
+}
+
+/* Modal */
+.modalContainer {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4); 
+}
+  
+.modalContent {
+    background-color: #fefefe;
+    margin: 3% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+.modalBtn{
+    display: block;
+	margin-top:10px;
+	width:100px;
+	height: 30px;
+	font-size: 15px;
+	background-color: #3c3633;
+	color:white;
+	border-radius:8px;
+	border:1px solid black;
+	transition-duration: 0.4s;
+	text-align: center;
+	align-content: center;   
+}
+
+.modalBtn:hover{
+	background-color: #e0c7b4;
+	color: black;
+}
+  
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Table */
+table{
+    border-radius: 30px;
+    padding: 20px;
+    color: #3c3633;
+}
+
+th, td{
+    padding: 10px;
+    vertical-align: top;
+    border-bottom: 1px solid #3c3633;;
+}
+
+td > img{
+    max-width: 300px;
+}
+
+th.logoColumn{
+    width: 350px;
+}
+
+th.nameColumn{
+    width: 200px;
+}
+
+th.descriptionColumn{
+    width: 200px;
+}
+
+th.contactusColumn{
+    width: 200px;
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #innerheaderContainer{
+        gap: 350px;
+    }
+
+    #shopContent > ul{
+        width: 150px;
+    }
+
+    #shopContent > ul > li > img{
+        width: 120px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #innerheaderContainer{
+        gap: 350px;
+    }
+
+    #shopContent > ul{
+        width: 160px;
+    }
+
+    #shopContent > ul > li > img{
+        width: 130px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #innerheaderContainer{
+        gap: 340px;
+    }
+
+    #shopContent > ul{
+        width: 160px;
+    }
+
+    #shopContent > ul > li > img{
+        width: 130px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #innerheaderContainer{
+        gap: 370px;
+    }
+}
+
+@media only screen and (min-width: 1010px) {
+    #innerheaderContainer{
+        gap: 400px;
+    }
+}
+
+@media only screen and (min-width: 1100px) {
+    #innerheaderContainer{
+        gap: 500px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #innerheaderContainer{
+        gap: 550px;
+    }
+}
+
+@media only screen and (min-width: 1300px) {
+    #innerheaderContainer{
+        gap: 650px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    #innerheaderContainer{
+        gap: 700px;
+    }
+}

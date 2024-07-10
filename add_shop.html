@@ -1,0 +1,125 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="add_shop.css">
+        <link rel="icon" type="image" href="icon.png">
+        <title>Add Shop</title>
+    </head>
+    <body>
+        <header>
+            <div id="headerContainer">
+                <div id="innerheaderContainer">
+                    <div id="headerLogo">
+                        <a href="home.html"><img class="img-logo" src="logo.png"></a>
+                    </div>
+                    <div id="add_shop">
+                        <a href="add_shop.html"><img class="img-shop" src="add_shop.png"></a>
+                    </div>
+            </div>
+        </header>
+        <div id="navigationContainer">
+            <div id="navigation">
+                <a href="home.html">Home</a>
+                <a href="shops.html">Printing Shops</a>
+                <a href="aboutUs.html">About Us</a>
+            </div>
+        </div>
+        <hr>
+        <div id="addshopContainer">
+            <div id="add_shopTitle">
+                <h1>Add Printing Shop</h1>
+            </div>
+            <div id="formContainer">
+                <div id="forminstructions">
+                    <h2>Instructions:</h2>
+                    <p>
+                        Please input the needed information to add your printing shop.
+                    </p>
+                    <p>
+                        <b>Tip:</b> For prices put the service before the price of the service.
+                    </p>
+                    <p>
+                        <b>Example:</b> Printing Short - 1 Pesos
+                    </p>
+                </div>
+                <div id="forms">
+                    <form action="#" method="post">
+                        <table>
+                            <tr>
+                                <td><label for="shop_name">Shop Name:</label></td>
+                                <td><input type="text" id="shop_name" name="shop_name" required></td>
+                            </tr>
+                            <tr>
+                                <td><label for="services">Services:</label></td>
+                                <td>
+                                    <input type="checkbox" id="printing" name="printing" value="printing">
+                                    <label for="printing">Printing</label><br>
+                                    <input type="checkbox" id="xerox" name="xerox" value="xerox">
+                                    <label for="xerox">Xerox</label><br>
+                                    <input type="checkbox" id="scanning" name="scanning" value="scanning">
+                                    <label for="scanning">Scanning</label><br>
+                                    <input type="checkbox" id="laminating" name="laminating" value="laminating">
+                                    <label for="laminating">Laminating</label><br>
+                                    <input type="checkbox" id="cd_burning" name="cd_burning" value="cd_burning">
+                                    <label for="cd_burning">CD Burning</label><br>
+                                    <input type="checkbox" id="photo_printing" name="photo_printing" value="photo_printing">
+                                    <label for="photo_printing">Photo Printing</label><br>
+                                    <input type="checkbox" id="rushID" name="rushID" value="rushID">
+                                    <label for="rushID">Rush ID</label><br>
+                                    <input type="checkbox" id="business_cards" name="business_cards" value="business_cards">
+                                    <label for="business_cards">Business Cards</label><br>
+                                    <input type="checkbox" id="calling_cards" name="calling_cards" value="calling_cards">
+                                    <label for="calling_cards">Calling Cards</label><br>
+                                    <input type="checkbox" id="invitation_cards" name="invitation_cards" value="invitation_cards">
+                                    <label for="invitation_cards">Invitation Cards</label><br>
+                                    <input type="checkbox" id="flyers" name="flyers" value="flyers">
+                                    <label for="flyers">Flyers</label><br>
+                                    <input type="checkbox" id="tarpaulin" name="tarpaulin" value="tarpaulin">
+                                    <label for="tarpaulin">Tarpaulin</label><br>
+                                    <input type="checkbox" id="tshirt_printing" name="tshirt_printing" value="tshirt_printing">
+                                    <label for="tshirt_printing">Tshirt Printing</label><br>
+                                    <input type="checkbox" id="ring_binding" name="ring_binding" value="ring_binding">
+                                    <label for="ring_binding">Ring Binding</label><br>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><label for="other_services">Other Services:</label></td>
+                                <td><input type="text" id="other_services" name="other_services"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="prices">Prices:</label></td>
+                                <td><input type="text" id="prices" name="prices"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="address">Address:</label></td>
+                                <td><input type="text" id="address" name="address"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="contact_info">Contact Information:</label></td>
+                                <td><input type="text" id="contact_info" name="contact_info"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="email_address">Email Address: </label></td>
+                                <td><input type="email" id="email_address" name="email_address"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="fb_page">Facebook Page:</label></td>
+                                <td><input type="text" id="fb_page" name="fb_page"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="front_logo">Printing Shop Front/Logo:</label></td>
+                                <td><input type="file" id="front_logo" name="front_logo"></td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">
+                                    <input type="submit" value="Submit" onclick="Submit()">
+                                    <input type="reset" value="Reset" onclick="Reset()">
+                                </td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="add_shop.js"></script>
+    </body>
+</html>
